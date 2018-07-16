@@ -1,0 +1,10 @@
+<!-- <mat-nav-list>  -->
+<!-- 	<a mat-list-item (click)="showImg('3dmakeup.jpg')" [ngClass]="{'navSelected': currentPage == 'edit-login-details'}">3d makeup</a>  -->
+<!-- 	<a mat-list-item (click)="showImg('bus.jpg')" [ngClass]="{'navSelected': currentPage == 'edit-login-details'}">Bus</a>  -->
+	
+	
+<!-- </mat-nav-list> -->
+
+<mat-nav-list > 
+	<a mat-list-item *ngFor="let img of imgList" (click)="showImg(img)">{{img.desc}}</a> 
+</mat-nav-list>

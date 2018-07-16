@@ -1,0 +1,13 @@
+mat-sidenav {
+  width: 200px;
+}
+
+hr {
+	margin: 5px 0;
+}
+
+.navSelected {
+	background-color: #b9b9b9;
+	color: #eee;
+}
+

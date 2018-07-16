@@ -1,0 +1,240 @@
+/* You can add global styles to this file, and also import other style files */
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  margin: 0;
+}
+.angular-logo {
+	margin: 0 4px 3px 0;
+	height: 50px;
+	vertical-align: middle;
+}
+.fill-remaining-space {
+	flex: 1 1 auto;
+}
+
+mat-card.login {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+mat-card.about {
+  max-width: 600px;
+  margin: 2em auto;
+  text-align: center;
+}
+ mat-list-item {
+  height: 10px;
+}
+
+ mat-list-item mat-list-item-content {
+  height: 10px;
+}
+
+.main-card {
+	padding: 5px;
+}
+
+.full-width-input {
+  width: 100%;
+}
+
+.fullHeight {
+  display: flex;
+  flex-direction: column;
+  background-color: slategray;
+}
+
+.error {
+	font-weight: bold;
+	color: red;
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+  height: 500px;
+}
+
+.main-content {
+	padding: 10px;
+}
+
+.main-sidebar {
+	width: 200px;
+	border: 1px #eee solid;
+	background-color: #dbdbdb;
+	border-radius: 5px;
+	color: #eee;
+	padding: 5px;
+}
+
+.mat-nav-list .mat-list-item {
+    color: rgba(0,0,0,.77);
+}
+
+.red-snackbar {
+	background-color: red;
+}
+
+.rounded {
+	border: 1px #b9b9b9 solid;
+	background-color: #b9b9b9;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.mainRounded {
+	border: 1px #b9b9b9 solid;
+	background-color: #dbdbdb;
+	border-radius: 5px;
+	padding: 5px;
+	margin-left: 2px;
+}
+
+.roundedBottom {
+	border-radius: 0 0 5px 5px;
+	border: 1px #3f51b5 solid;
+}
+
+.centered {
+	text-align: center;
+}
+
+.rightAlign {
+	text-align: right;	
+}
+
+.leftAlign {
+	text-align: left;	
+}
+
+.externalLinks {
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+.whiteBackground {
+	background-color: #eee;	
+}
+
+.lightestGrayBackround {
+	background-color: #eaeaea;
+}
+
+.lightGrayBackground {
+	background-color: #dbdbdb;
+}
+
+.darkerGrayBackground {
+	background-color: #b9b9b9;
+}
+
+.header {
+	background-color: slategray;
+	color: lightgray;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+.footer {
+	background-color: slategray;
+	color: lightgray;
+	border-radius: 5px;
+	padding: 2px;
+	height: 32px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.bottomSpace {
+	margin-bottom: 2px;
+}
+
+.roundedBottomSpace {
+	border: 1px #b9b9b9 solid;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 2px;
+}
+
+.mainActions {
+	padding: 0 0 0 0; 
+	margin: 20px 0 0 0;
+}
+
+.mainH3 {
+	margin-top: 0px !important;
+}
+
+.mat-nav-list .mat-list-item .mat-list-item-content {
+	padding: 0 5px !important;
+}
+
+.mat-nav-list .mat-list-item {
+	height: 30px !important;
+	font-size: 14px !important;
+}
+
+/* 
+* layout styling
+ */
+.all-wrap {
+  min-height: 100vh;
+}
+
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  background-color: #eaeaea;
+}
+
+/*
+ * Make the Component injected by Router Outlet full height:
+ */
+main {
+  display: flex;
+  flex-direction: column;
+  > *:not(router-outlet) {
+    flex: 1;
+    display: block;
+  }
+}
+
+.innerContent {
+	min-height: calc(100vh - 100px);
+}
+
+.aboutContent {
+	min-height: calc(100vh - 500px);
+}
+
+.navcontainer {
+	  flex: 1;
+}
+
+/* end layout styling */
+
+
+mat-radio-group {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+mat-radio-button {
+  margin: 4px 0 0px 10px;
+}
+
+.mat-radio-label-content, .mat-checkbox-label {
+	font-weight: normal;
+}
