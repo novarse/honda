@@ -15,6 +15,9 @@
   flex: 1;
 }
 
+hr {
+	margin: 5px 0;
+}
 
 /*
  * Make the Component injected by Router Outlet full height:

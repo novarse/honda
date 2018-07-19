@@ -1,14 +1,41 @@
-<div fxLayout="column" fxLayoutGap="2px">
+<div fxLayout="row" >
+	<div fxFlex></div>
+	<div fxFlex="0 1">
+		<div fxLayout="column" fxLayoutGap="2px">
 
-  <div class="page-wrap">
-    <header role="banner">
-    	<app-header></app-header>
-    </header>
-    
-    <main class="content" >
-		<router-outlet></router-outlet>
-    </main>
-    
-  </div>
-  
+		  <div class="page-wrap">
+		    <header role="banner">
+		    	<app-header></app-header>
+		    </header>
+		    
+		    <main class="content" >
+
+					<mat-sidenav-container class="navcontainer">
+						<mat-sidenav mode="side" [opened]="!mobileQuery.matches" class="main-sidebar">
+					  		<app-sidebar></app-sidebar>
+					  	</mat-sidenav>
+	
+						<mat-sidenav-content>
+	
+							<mat-card style="margin: 2px; padding: 10px;">
+							
+								<div class="innerContent">
+									<router-outlet></router-outlet>
+								</div>
+								
+							</mat-card>
+	
+						</mat-sidenav-content>
+	
+					</mat-sidenav-container>
+
+		    </main>
+		    
+<!-- 			<app-footer></app-footer> -->
+		  </div>
+		  
+		</div>
+	</div>
+	<div fxFlex></div>
 </div>
+

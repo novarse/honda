@@ -1,21 +1,12 @@
-<mat-sidenav-container class="navcontainer">
-  	<mat-sidenav mode="side" opened class="main-sidebar"><app-sidebar>
-  		</app-sidebar>
-  	</mat-sidenav>
+<ngb-carousel *ngIf="images" style="background-color: blue">
+  <ng-template ngbSlide  *ngFor="let img of images">
+  
+	    <img src="/assets/img/{{img.name}}" alt="Random first slide" style="width: 100%">
+	    <div class="carousel-caption">
+	      <h3>{{img.desc}}</h3>
+    	</div>
 
+  </ng-template>
 
-	<mat-sidenav-content>
+</ngb-carousel>
 
-		<mat-card style="margin: 2px; padding: 10px;">
-		
-			<div class="innerContent">
-				<h2>{{imageDesc}}</h2>
-				<img src="{{imageName}}">
-
-			</div>
-			
-		</mat-card>
-
-	</mat-sidenav-content>
-
-</mat-sidenav-container>

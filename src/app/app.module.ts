@@ -10,6 +10,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   {
@@ -47,6 +49,8 @@ const routes: Routes = [
     BrowserModule,
     AppMaterialModule,
     BrowserAnimationsModule,
+    NgbModule.forRoot(),
+    HttpClientModule,
     RouterModule.forRoot(routes, {useHash: true})
   ],
   providers: [],
