@@ -20,7 +20,6 @@ export class SidebarComponent implements OnInit {
   }
 
   showImg(img: MyImage) {
-    console.log('imgName = ' + img);
     this.dataSharingService.setImage(img);
   }
 }

@@ -1,5 +1,5 @@
-<ngb-carousel *ngIf="images" style="background-color: blue">
-  <ng-template ngbSlide  *ngFor="let img of images">
+<ngb-carousel *ngIf="images" style="background-color: blue" #myCarousel="ngbCarousel">
+  <ng-template ngbSlide  *ngFor="let img of images" id="{{img.name}}">
   
 	    <img src="/assets/img/{{img.name}}" alt="Random first slide" style="width: 100%">
 	    <div class="carousel-caption">
