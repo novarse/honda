@@ -14,6 +14,7 @@ import { CacheInterceptor } from './interceptors/cache-interceptor';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SideLayoutComponent } from './components/layout/side-layout/side-layout.component';
 
 const routes: Routes = [
   {
@@ -29,11 +30,17 @@ const routes: Routes = [
       {
         path: 'app-about',
         component: AboutComponent
-      },
+      }
+    ],
+  },
+  {
+    path: '',
+    component: SideLayoutComponent,
+    children: [
       {
         path: 'app-photos',
         component: PhotosComponent
-      },
+      }
     ],
   }
 ]
@@ -45,7 +52,8 @@ const routes: Routes = [
     HeaderComponent,
     PhotosComponent,
     SidebarComponent,
-    AboutComponent
+    AboutComponent,
+    SideLayoutComponent
   ],
   imports: [
     BrowserModule,
