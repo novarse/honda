@@ -1,7 +1,7 @@
 import {HttpResponse} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import * as moment from 'moment';
-import {Constants} from '../utils/Constants';
+import {Constants} from '../utils/constants';
 
 @Injectable({
   providedIn: 'root'
